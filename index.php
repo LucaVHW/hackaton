@@ -15,10 +15,11 @@
     </div>
     <div class="panel2">
       <div class="info">
-        <div class="info2">
-          <h3>Welkom bij Spoednick</h3>
-          <p>Spoednick is een chatbot gemaakt om jou leven gemakkelijker te maken!</p>
-        </div>
+        <h3 class="demo">Welkom bij Spoednick</h3>
+        <br>
+        <p class="demo">Zit u met een kwaaltje? Weet u niet of u naar de dokter moet? Spoednick is een chatbot gemaakt om uw leven gemakkelijker te maken!</p>
+        <br>
+        <p>Start uw gesprek met Spoednick door uw vraag te stellen in het invoervak.</p>
       </div>
       <div class="chatbot">
         <div class="chat">
@@ -26,7 +27,10 @@
           <p id="hi"><?php
           $a = $_POST["chat"];
           $b = "hallo";
+          $c = "Hallo";
           if ($a == $b) {
+            echo "Hallo! Hoe kan ik helpen?";
+          } elseif ($a == $c) {
             echo "Hallo! Hoe kan ik helpen?";
           }
            ?></p>
