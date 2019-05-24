@@ -24,7 +24,7 @@
       <div class="chatbot">
         <div class="chat">
           <p id="hello"><?php echo $_POST["chat"]?></p>
-          <p id="hi"><?php
+          <p class="fade-in" id="hi"><?php
           $a = $_POST["chat"];
           $b = "hallo";
           $c = "Hallo";
@@ -35,7 +35,7 @@
           }
            ?></p>
         </div>
-        <form action="" method="post">
+        <form action="index.php" method="post">
           <input type="text" name="chat" value="">
         </form>
           <div class="icon">
